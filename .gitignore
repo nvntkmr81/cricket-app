@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/cric-profiler/.vs/cric-profiler
+/cric-profiler/cric-profiler/obj
+/cric-profiler/cric-profiler/cric-profiler.csproj.user
+/.vs
+/cric-profiler/cric-profiler/bin
