@@ -8,3 +8,6 @@
 /cric-profiler/bin/Debug/net8.0
 /cric-profiler/obj
 /cric-profiler/.vs/cric-profiler
+/cric-profiler/cric-profiler.csproj.user
+/cric-profiler.Handler/bin/Debug/net8.0
+/cric-profiler.Handler/obj
