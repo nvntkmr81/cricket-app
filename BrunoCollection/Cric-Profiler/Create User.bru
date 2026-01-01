@@ -1,0 +1,26 @@
+meta {
+  name: Create User
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://localhost:44385/api/Users
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "userName": "nvntkmr",
+    "role": "admin",
+    "email": "nvntkmr81@gmail.com",
+    "firstName": "Navneet",
+    "lastName": "Kumar"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
