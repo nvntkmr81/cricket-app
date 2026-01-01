@@ -4,15 +4,9 @@
 
 
 /.vs
-/cric-profiler/.vs/ProjectEvaluation
-/cric-profiler/bin/Debug/net8.0
-/cric-profiler/obj
-/cric-profiler/.vs/cric-profiler
+
 /cric-profiler/cric-profiler.csproj.user
-/cric-profiler.Handler/bin/Debug/net8.0
-/cric-profiler.Handler/obj
-/Handler/cric-profiler.Handler/bin/Debug/net8.0
-/Handler/cric-profiler.Handler/obj
-/Host/.vs
-/Host/bin/Debug/net8.0
-/Host/obj
+
+/**/.vs
+/**/bin/Debug/net8.0
+/**/obj
