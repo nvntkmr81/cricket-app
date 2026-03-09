@@ -8,6 +8,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCoreServices();
+// Register rate limiting from Core extensions
+builder.Services.AddAppRateLimiting();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -18,6 +21,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// Enable the rate limiter middleware globally
+app.UseAppRateLimiting();
 
 app.UseAuthorization();
 
