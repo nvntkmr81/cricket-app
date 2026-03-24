@@ -1,5 +1,6 @@
 ﻿using Core.Services;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 
 namespace Core.Extensions
 {
@@ -10,6 +11,10 @@ namespace Core.Extensions
             // Register core services here
             services.AddSingleton<IAppRepository, DataRepository>(sp =>
     new DataRepository("app.db"));
+            
+            // Provide a default IConfiguration so services depending on IConfiguration can be resolved in tests
+            services.AddSingleton<IConfiguration>(new ConfigurationBuilder().AddInMemoryCollection().Build());
+
             services.AddScoped<ITokenService, TokenService>();
             return services;
         }

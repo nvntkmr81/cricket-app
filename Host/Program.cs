@@ -13,6 +13,9 @@ builder.Services.AddAppRateLimiting();
 
 var app = builder.Build();
 
+// Global exception logging middleware
+app.UseExceptionLogging();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
